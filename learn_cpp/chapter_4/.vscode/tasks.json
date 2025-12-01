@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build C++",
+			"command": "C:/msys64/ucrt64/bin/g++.exe",
+			"args": [
+				"-std=c++17",
+				"-fdiagnostics-color=always",
+				"-g",
+				"${fileDirname}\\${fileBasenameNoExtension}.cpp", //"${workspaceFolder}\\${fileBasenameNoExtension}.cpp"
+				//"${fileDirname}\\vector_Vector3d.cpp", //"${workspaceFolder}\\${fileBasenameNoExtension}.cpp"
+				//"${fileDirname}\\vector_Point3d.cpp", //"${workspaceFolder}\\${fileBasenameNoExtension}.cpp"
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "C:/msys64/ucrt64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:/msys64/ucrt64/bin/g++.exe"
+		}
+	]
+}
