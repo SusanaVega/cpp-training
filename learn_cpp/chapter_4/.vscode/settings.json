@@ -1,5 +1,7 @@
 {
-    "C_Cpp.default.compilerPath": "C:/MinGW/bin/gcc.exe",
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
         "iostream": "cpp",
         "array": "cpp",
@@ -48,7 +50,10 @@
         "ratio": "cpp",
         "bitset": "cpp",
         "string_view": "cpp",
-        "cassert": "cpp"
+        "cassert": "cpp",
+        "*.tcc": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    //"editor.suggestOnTriggerCharacters": false,
+    //"editor.quickSuggestions": {"other": false, "comments": false, "strings": false},
+    //"editor.innluneSuggest.enabled": false,
 }
