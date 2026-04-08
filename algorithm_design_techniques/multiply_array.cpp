@@ -1,0 +1,1 @@
+//multiplies each element in an array by the number 5. What should the base case be?
