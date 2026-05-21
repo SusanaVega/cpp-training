@@ -37,10 +37,13 @@ The Logic
 void InsertionSort(std::vector<int>& arr, int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i];
+        std::cout << "key: " << key << std::endl;
         int j = i - 1;
         // Move elements of arr[0..i-1] that are greater than the key
         // to one position ahead of their current position
+        std::cout << "j: " << j << std::endl;
         while (j >= 0 && arr[j] > key) {
+            std::cout << "arr[j]: " << arr[j] << std::endl;
             arr[j + 1] = arr[j];
             j = j - 1;
         }
@@ -51,7 +54,12 @@ void InsertionSort(std::vector<int>& arr, int n) {
 
 
 int main(){
-    std::vector<int> A {12, 11, 13, 5, 6}; //{10, 20, 5, 30}; //{29, 10, 14, 37, 13};{1,2,3,4,5};{7, 3, 5, 2}
+    std::vector<int> A {63, 45, 46, 94, 35, 55, 88, 76, 53, 60}; //{10, 20, 5, 30}; //{29, 10, 14, 37, 13};{1,2,3,4,5};{7, 3, 5, 2}
     InsertionSort(A, static_cast<int>(A.size()));
+    for (auto &&i : A)
+    {
+        std::cout << i << " ";
+    }
+    
     return 0;
 }

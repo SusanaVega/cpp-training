@@ -38,7 +38,8 @@ void bubbleSort(std::vector<int>& array){
 
 
 int main(){
-    std::vector<int> A {29, 10, 14, 37, 13}; //{1,2,3,4,5}; 
+    std::cout << "start" <<std::endl;
+    std::vector<int> A {42,3325,18,1601,63,7,18}; //{1,2,3,4,5}; 
     bubbleSort(A);
     return 0;
 }

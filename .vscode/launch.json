@@ -2,25 +2,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug C++ (Linux)",
-            "type": "cppdbg",
+            "name": "C++ LLDB Debug",
+            "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["apple", "banana", "cherry 123"],
-            "stopAtEntry": false,
+            "args": [],
+            "stopOnEntry": false,
             "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "Build C++",
-            "miDebuggerPath": "/usr/bin/gdb"
+            "terminal": "integrated",
+            "preLaunchTask": "C/C++: g++ build active file"
         }
     ]
 }
